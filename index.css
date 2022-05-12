@@ -1,6 +1,11 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
 }
 .nav-bar{
     position: fixed;
@@ -15,10 +20,7 @@
 padding-top: 80px;
 }
 .navbar-links{
-    display: flex;
-    padding-right:30px ;
-    /* width: 20%; */
-    
+    display: flex;  
 }
 .navbar-links a:hover{
     background-color:#45567d ;
@@ -35,7 +37,6 @@ padding-top: 80px;
 background-color: #000;
 color: white;
 height: 100vh;
-width: 100%;
 display: flex;
 flex-direction: column;
 justify-content: center;
@@ -73,7 +74,6 @@ font-size: 2rem;
 }
 .project-title{
     text-align: center;
-    /* text-decoration: underline; */
     font-size: 2rem;
     padding-top: 50px;
 }
@@ -91,7 +91,6 @@ font-size: 2rem;
 }
 .code {
     display: none;
-    /* color: #be3144; */
     transition: color 0.3s ease-out;
 }
 
@@ -128,8 +127,7 @@ footer{
     text-align: center;
 }
 hr{
- /* width: 99%; */
- border: 2px solid #be3144;
+ border: 1px solid #be3144;
 }
 .footer-text h1{
 font-size: 4rem;
@@ -159,8 +157,8 @@ padding-top: 100px;
 }
 .footer-remark{
 display: flex;
-justify-content: space-between;
-width: 80%;
+justify-content: space-around;
+width: 100%;
 padding-top:40px;
 font-size: 20px;
 padding-bottom:40px;
@@ -184,9 +182,8 @@ padding-bottom:40px;
     }
     .footer-remark{
         font-size: 15px;
-    }
-
-    .img-text-div img{
-        border-radius: 10px;
+        width: 100%;
+        padding-left: 20px;
+        justify-content: space-between;
     }
 }
